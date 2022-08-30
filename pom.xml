@@ -17,6 +17,7 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
+    <scope>compile</scope>
     <version>7.4.0</version>
     
 </dependency>
@@ -91,21 +92,17 @@
 
 
   </dependencies>
-  
- <profiles>
-		<profile>
+  <profiles>
+ <profile>
 			<id>testng</id>
-
 			<build>
 				<plugins>
-					<!-- Below plug-in is used to execute tests -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
-						<version>2.18.1</version>
+						<version>3.0.0-M5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<!-- TestNG suite XML files -->
 								<suiteXmlFile>testng.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
@@ -114,4 +111,10 @@
 			</build>
 		</profile>
 	</profiles>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<aspectj.version>1.8.10</aspectj.version>
+	</properties>
 </project>
