@@ -17,7 +17,6 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <scope>compile</scope>
     <version>7.4.0</version>
     
 </dependency>
@@ -68,13 +67,6 @@
     <groupId>com.asprise.ocr</groupId>
     <artifactId>java-ocr-api</artifactId>
     <version>[15,)</version>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/com.asprise.ocr/java-ocr-api -->
-<dependency>
-    <groupId>com.asprise.ocr</groupId>
-    <artifactId>java-ocr-api</artifactId>
-    <version>15.3.0.3</version>
 </dependency>
 
 <dependency>
