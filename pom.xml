@@ -86,7 +86,7 @@
   </dependencies>
   <profiles>
  <profile>
-			<id>smoke</id>
+			<id>smokeSuite</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -104,7 +104,7 @@
 		</profile>
 		
 		<profile>
-			<id>Regression</id>
+			<id>RegressionSuite</id>
 			<build>
 				<plugins>
 					<plugin>
